@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Gudla | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Navbar -->
+    <nav class="p-6 flex justify-between items-center shadow bg-white fixed w-full z-10">
+        <h1 class="text-2xl font-bold tracking-tight">Ganesh Gudla</h1>
+        <div class="space-x-6 text-lg">
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+            <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+            <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-50 to-purple-100"
+        id="home">
+        <img src="ganipic.jpg" alt="Ganesh Gudla" class="w-40 h-40 rounded-full shadow-lg mb-6" data-aos="zoom-in">
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-4" data-aos="fade-up">Hi, I'm <span
+                class="text-blue-600">Ganesh Gudla</span></h2>
+        <p class="text-lg md:text-2xl mb-6 max-w-2xl" data-aos="fade-up" data-aos-delay="200">I'm a <span
+                class="font-semibold">Web Developer</span> who loves crafting websites and apps that feel natural,
+            engaging, and meaningful.</p>
+        <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
+            data-aos="fade-up" data-aos-delay="400">See My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+        <h3 class="text-3xl font-bold mb-6" data-aos="fade-right">About Me</h3>
+        <p class="text-lg leading-relaxed" data-aos="fade-left">
+            I'm a developer who enjoys turning ideas into real, functional experiences. I focus on writing clean,
+            maintainable code and designing interfaces that people actually enjoy using. Outside of coding, I love
+            learning, exploring new tools, and connecting with people who share the same passion for tech and
+            creativity.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-gray-100">
+        <h3 class="text-3xl font-bold mb-10 text-center" data-aos="zoom-in">Projects</h3>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-aos="fade-up">
+                <h4 class="text-xl font-semibold mb-2">Personal Portfolio</h4>
+                <p class="text-gray-600 mb-4">A responsive portfolio website showcasing my projects, skills, and contact
+                    details. Built with HTML, TailwindCSS, and a sprinkle of animation.</p>
+                <a href="#" class="text-blue-600 font-medium hover:underline">View Project</a>
+            </div>
+            <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-aos="fade-up"
+                data-aos-delay="200">
+                <h4 class="text-xl font-semibold mb-2">E-commerce App</h4>
+                <p class="text-gray-600 mb-4">An online shopping platform with product listings, cart, and payment
+                    integration. Built using React and Firebase.</p>
+                <a href="#" class="text-blue-600 font-medium hover:underline">View Project</a>
+            </div>
+            <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-aos="fade-up"
+                data-aos-delay="400">
+                <h4 class="text-xl font-semibold mb-2">Blog Platform</h4>
+                <p class="text-gray-600 mb-4">A simple yet elegant blogging site with authentication and markdown
+                    support. Built using Node.js and MongoDB.</p>
+                <a href="#" class="text-blue-600 font-medium hover:underline">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 max-w-5xl mx-auto">
+        <h3 class="text-3xl font-bold mb-10 text-center" data-aos="fade-up">Skills</h3>
+        <div class="flex flex-wrap gap-4 justify-center text-lg">
+            <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full">HTML</span>
+            <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full">CSS</span>
+            <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full">JavaScript</span>
+            <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full">React</span>
+            <span class="px-4 py-2 bg-red-100 text-red-700 rounded-full">Java</span>
+            <span class="px-4 py-2 bg-gray-200 text-gray-800 rounded-full">SQL</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gray-100">
+        <h3 class="text-3xl font-bold mb-6 text-center" data-aos="fade-up">Get in Touch</h3>
+        <p class="text-center mb-6 text-lg" data-aos="fade-up" data-aos-delay="200">I’m always open to discussing new
+            projects, creative ideas, or opportunities to collaborate.</p>
+        <div class="flex flex-col items-center space-y-4" data-aos="fade-up" data-aos-delay="400">
+            <!-- Correct mailto link so it opens email client with pre-filled recipient -->
+            <a href="mailto:ganeshgudla9347dl@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Ganesh,%0D%0A%0D%0A"
+                class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">Email Me</a>
+            <p class="text-gray-700">📧 ganeshgudla9347dl@gmail.com</p>
+            <a href="https://www.linkedin.com/in/ganesh-gudla-b9419627b" target="_blank"
+                class="px-6 py-3 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-900 transition">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-white shadow mt-10">
+        <p class="text-gray-600">&copy; 2025 Ganesh Gudla. Built with ❤️ and a lot of coffee.</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
